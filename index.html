@@ -11,73 +11,81 @@
   <title>Flashcard webpage</title>
 </head>
 <body>
-  <h1>Javascript & JQuery Flashcards</h1>
+  <h1 class="text-center p-3">Javascript & JQuery Flashcards</h1>
   <div id="cards">
-    <div class="card">
-      <p id="js" class="term card-text">JavaScript (JS)</p>
-      <p id="js-D" class="definition card-text">an object-oriented computer programming language commonly used to create interactive effects within web browsers.</p>
+    <div class="row">
+      <div id="js-card" class="card col-3">
+        <p id="js" class="term card-text">JavaScript (JS)</p>
+        <p id="js-D" class="definition card-text">an object-oriented computer programming language commonly used to create interactive effects within web browsers.</p>
+      </div>
+      <div id="op-card" class="card col-3">
+        <p id="op" class="term card-text">Operators</p>
+        <p id="op-D" class="definition card-text">A character that represents a Mathmatical action.</p>
+      </div>
+      <div id="var-card" class="card col-3">
+        <p id="var" class="term card-text">Variables</p>
+        <p id="var-D" class="definition card-text">A name that stores a data value</p>
+      </div>
+      <div id="var-name-card" class="card col-3">
+        <p id="var-name" class="term card-text">Variable naming conventions</p>
+        <p id="var-name-D" class="definition card-text">lowerCamelCase</p>
+      </div>
     </div>
-    <div class="card">
-      <p id="op" class="term card-text">Operators</p>
-      <p id="op-D" class="definition card-text">A character that represents a Mathmatical action.</p>
+    <div class="row">
+      <div id="functions-card" class="card col-3">
+        <p id="functions" class="term card-text">Functions</p>
+        <p id="functions-D" class="definition card-text">a block of code designed to preform a specific task</p>
+      </div>
+      <div id="methods-card" class="card col-3">
+        <p id="methods" class="term card-text">Methods</p>
+        <p id="methods-D" class="definition card-text">Functions asigned to objects in Javascript</p>
+      </div>
+      <div id="arguments-card" class="card col-3">
+        <p id="arguments" class="term card-text">Arguments</p>
+        <p id="arguments-D" class="definition card-text">The values passed to and recived by the function</p>
+      </div>
+      <div id="parameters-card" class="card col-3">
+        <p id="parameters" class="term card-text">Parameters</p>
+        <p id="parameters-D" class="definition card-text">Placeholders for the arguments needed for the function to run</p>
+      </div>
     </div>
-    <div class="card">
-      <p id="var" class="term card-text">Variables</p>
-      <p id="var-D" class="definition card-text">A name that stores a data value</p>
+    <div class="row">
+      <div id="return-card" class="card col-3">
+        <p id="return" class="term card-text">Return</p>
+        <p id="return-D" class="definition card-text">stops the execution of a funtion and returns a value</p>
+      </div>
+      <div id="chaining-card" class="card col-3">
+        <p id="chaining" class="term card-text">Chaining methods</p>
+        <p id="chaining-D" class="definition card-text">calling a method on another method within the same line of code</p>
+      </div>
+      <div id="string-card" class="card col-3">
+        <p id="string" class="term card-text">Strings</p>
+        <p id="string-D" class="definition card-text">a primitive data type that is a line of text or numbers within quotes</p>
+      </div>
+      <div id="boolean-card" class="card col-3">
+        <p id="boolean" class="term card-text">Booleans</p>
+        <p id="boolean-D" class="definition card-text">a primitive data type that represents the values true or false</p>
+      </div>
     </div>
-    <div class="card">
-      <p id="var-name" class="term card-text">Variable naming conventions</p>
-      <p id="var-name-D" class="definition card-text">lowerCamelCase</p>
+    <div class="row">
+      <div id="nan-card" class="card col-3">
+        <p id="nan" class="term card-text">NaN</p>
+        <p id="nan-D" class="definition card-text">not a number</p>
+      </div>
+      <div id="null-card" class="card col-3">
+        <p id="null" class="term card-text">Null</p>
+        <p id="null-D" class="definition card-text">a primitive data type that represents the data has no value</p>
+      </div>
+      <div id="alert-card" class="card col-3">
+        <p id="alert" class="term card-text">Alert</p>
+        <p id="alert-D" class="definition card-text">a method that displays an alert box to the user</p>
+      </div>
+      <div id="comments-card" class="card col-3">
+        <p id="comments" class="term card-text">Comments</p>
+        <p id="comments-D" class="definition card-text">notes taken within your code that will not effect the code</p>
+      </div>
     </div>
-    <div class="card">
-      <p id="functions" class="term card-text">Functions</p>
-      <p id="functions-D" class="definition card-text">a block of code designed to preform a specific task</p>
-    </div>
-    <div class="card">
-      <p id="methods" class="term card-text">Methods</p>
-      <p id="methods-D" class="definition card-text">Functions asigned to objects in Javascript</p>
-    </div>
-    <div class="card">
-      <p id="arguments" class="term card-text">Arguments</p>
-      <p id="arguments-D" class="definition card-text">The values passed to and recived by the function</p>
-    </div>
-    <div class="card">
-      <p id="paramaters" class="term card-text">Parameters</p>
-      <p id="parameters-D" class="definition card-text">Placeholders for the arguments needed for the function to run</p>
-    </div>
-    <div class="card">
-      <p id="return" class="term card-text">Return</p>
-      <p id="return-D" class="definition card-text">stops the execution of a funtion and returns a value</p>
-    </div>
-    <div class="card">
-      <p id="chaining" class="term card-text">Chaining methods</p>
-      <p id="chaining-D" class="definition card-text">calling a method on another method within the same line of code</p>
-    </div>
-    <div class="card">
-      <p id="string" class="term card-text">Strings</p>
-      <p id="string-D" class="definition card-text">a primitive data type that is a line of text or numbers within quotes</p>
-    </div>
-    <div class="card">
-      <p id="boolean" class="term card-text">Booleans</p>
-      <p id="boolean-D" class="definition card-text">a primitive data type that represents the values true or false</p>
-    </div>
-    <div class="card">
-      <p id="nan" class="term card-text">NaN</p>
-      <p id="nan-D" class="definition card-text">not a number</p>
-    </div>
-    <div class="card">
-      <p id="null" class="term card-text">Null</p>
-      <p id="null-D" class="definition card-text">a primitive data type that represents the data has no value</p>
-    </div>
-    <div class="card">
-      <p id="alert" class="term card-text">Alert</p>
-      <p id="alert-D" class="definition card-text">a method that displays an alert box to the user</p>
-    </div>
-    <div class="card">
-      <p id="comments" class="term card-text">Comments</p>
-      <p id="comments-D" class="definition card-text">notes taken within your code that will not effect the code</p>
-    </div>
-    <div class="card">
+    <div id="jquery-card" class="card col-3">
       <p id="jquery" class="term card-text">jQuery</p>
       <p id="jquery-D" class="definition card-text">a Javascipt library</p>
     </div>
